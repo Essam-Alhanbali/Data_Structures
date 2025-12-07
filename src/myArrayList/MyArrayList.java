@@ -1,10 +1,10 @@
-package unsortedArrayLIst;
+package myArrayList;
 
-public class UnsortedArrayList {
+public class MyArrayList {
 	private int arr[];
 	private int index;		
 	
-	public UnsortedArrayList() {
+	public MyArrayList() {
 		arr = new int [10];
 		index = 0;
 	}
@@ -37,5 +37,18 @@ public class UnsortedArrayList {
 	public void deleteLast() {
 		if (index > 0)
 			index--;
+	}
+
+	public int size() {
+		return index;
+	}
+
+	public int atIndex(int ind) {
+		return arr[ind];
+	}
+
+	public boolean isEmpty() {
+		if (index == 0) return true;
+		else return false;
 	}
 }
